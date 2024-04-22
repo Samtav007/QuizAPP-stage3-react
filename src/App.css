@@ -1,0 +1,187 @@
+body{
+  background-color: rgb(22, 22, 103);
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.Box {
+  background-color: white;
+  border: 1px solid #888;
+  border-left: 5px solid rgb(190, 190, 245);
+  height: 80vh;
+  width: 70vw;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.Box h1, .Box h3 {
+  text-align: center;
+}
+
+.Box p {
+  padding: 10px;
+}
+
+
+.button {
+  width: 100%;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playbutton {
+  background-color: rgb(10, 179, 6);
+  width: 100%;
+}
+
+.previous {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(94, 155, 195);
+}
+
+.next {
+  border-radius:20px ;
+  padding: 10px;
+  background-color: rgb(13, 144, 13);
+}
+
+.quit {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(249, 69, 69);
+}
+
+.playagain {
+  background-color: rgb(228, 217, 251);
+  color: rgb(97, 49, 199);
+  border: 2px solid rgb(132, 80, 242);
+}
+
+.home {
+  background-color: rgb(227, 250, 227);
+  color: rgb(59, 146, 60);
+  border: 2px solid rgb(101, 184, 103);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.option {
+  gap: 20px;
+  background-color: lightskyblue;
+  justify-items: center;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content:space-around;
+  margin: 20px 0;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.quizBox{
+  color:black;
+  background-color: white;
+  border: 1px solid #000000;
+  width: 200%;
+  height: 200%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+span{
+  font-size: 20px;
+}
+
+.stat {
+  margin: 10px;
+  text-align: left;
+}
+.Result{
+  color: green;
+}
+
+.resultContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Result {
+  color: rgb(10, 179, 6);
+}
+
+.score{
+  color: blue;
+}
+
+
